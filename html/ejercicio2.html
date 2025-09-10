@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #2</title>
+</head>
+<body>
+    <table width="100%" border="1">
+        <caption><h1>CSS GRID-Tematica Backend</h1></caption>
+        <tr>
+            <td colspan="3"><h1>Arquitectura y Practicas de Backend</h1> 
+                <p>Diseñar un backend solido requiere seguridad, escalabilidad y buenas practicas de mantenimiento. Este layout organiza un ejemplo de contenido tecnico</p>
+            </td>
+          
+        </tr>
+        <tr>
+            <td rowspan="2"><h1>Side bar-Roles</h1>
+                <ul>
+                    <li>Backend developer</li>
+                    <li>DevOps / Platform Engineer</li>
+                    <li>Site Reliabitily Engineer(SRE)</li>
+                    <li>DBA / Data Engineer</li>
+                    <li>QA Automation</li>
+                </ul>
+                <p>Nota: antes recomendabamos subir credenciales al repo. Ahora usamos gestores de secretos como AWS Secrets Manager o Vault.</p>
+            </td>
+            <td colspan="2"><h1>Content 1-Pipeline tipico (OL)</h1>
+               <ol>
+                <li>Definir APIs (REST/GraphQL) y contratos versionados.</li>
+                <li>Modelar dominio y persistencia (PostgreSQL, Redis).</li>
+                <li>Implementar logica con tests unitarios e integracion.</li>
+                <li>Contenerizar con Docker y publicar una imagen.</li>
+                <li>Desplegar via CI/Cd en kubernetes o serverless</li>
+                <li>Observar: logs, metricas y trazas distribuidas.</li>
+               </ol> <p>Consejo: prioriza idempotencia y reintentos con backoff en integraciones externas.</p>
+            </td>
+           
+        </tr>
+        <tr>
+            <td><h1>Content-Buenas practicas</h1>
+             <ul>
+                    <li>Validacion y sanitizacion de entradas.</li>
+                    <li>Autenticacion stateless(JWT/OIDC) y autorizacion basada en roles.</li>
+                    <li>Uso de migraciones para cambios de esquema.</li>
+                    <li>Patrones de resiliencia: circuit breaker, timeout, bulkhead.</li>
+                    <li>Politicas de errores clara: codigos HTTP y mensajes utiles.</li>
+                </ul>
+                <p>Migramos de una configucion hardcodeada a variables de entorno y archivos encriptados.</p>
+            
+            </td>
+            <td><h1>Contect 3-Glosario(DL)</h1>
+            <dt>
+                <dd>API gateway<p>Punto de entrada que aplica autenticacion, rate-limite y enrutamiento</p></dd>
+                <dd>ORM
+                <p>Capa que mapea objetos a tablas; util pero puede requerir tuning.</p></dd>
+                <dd>idempotencia
+                <p>Propiedad para que repetir una operacion produzca el mismo resultado.</p></dd>
+                <dd>Observabilidad
+                <p>Conjunto de logs, metrica y trazas para entender el sistema en ejecucion.</p></dd>
+                <p>Recomendacion: documenta los endpoints con openAPI y genera clientes automaticamente.</p>
+            </dt></td>
+                
+                
+            
+            
+            
+        </tr>
+        <tr>
+            <td colspan="3"><p>2025 Backend demo-Cambios recientes, se habilito mTLS, se retiro HTTP basico. Manten tu CI/CD con pruebas y escaneo de seguridad.</p></td>
+           
+        </tr>
+    </table>
+</body>
+</html>
